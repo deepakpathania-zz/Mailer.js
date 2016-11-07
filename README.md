@@ -44,8 +44,8 @@ var mailOptions = {
 ```
 
 ```javascript
-        $(".submit-btn").click(function(e) {
-        if($('#contact-name').val() == "" || $('#email').val()==""|| $('#textarea1').val()=="" || !$("#contact-form")[0].checkValidity()) {
+$(".submit-btn").click(function(e) {
+        if($('#contact-name').val() == "" || $('#email').val()==""|| $('#textarea1').val()=="" || !$("#contact-form")          [0].checkValidity()) {
             window.alert("Incomplete data", "Please fill out all the fields correctly. Thanks :)");
         }
         else {
@@ -74,7 +74,7 @@ var mailOptions = {
 ```
 
 - Now let us push your mailer script to heroku. Use the following set of commands to do so. More information here. <code>https://devcenter.heroku.com/articles/deploying-nodejs</code>
-<code>
+```
 npm init
 git init
 git add .
@@ -82,8 +82,9 @@ git commit -m "Mailer v0.1"
 heroku login
 heroku create
 git push heroku master
-</code>
+```
 
 - If everything went well, you should now have a heroku url where your script is deployed. Replace that url with the <code>https://your-app-name.herokuapp.com/</code> in the POST request.
 
 - And you are good to go. Create a submit button in your form, set correct attributes in both the request and the request.body.element in form and script respectively, bind this post request to the submit button of your form and you should receive the submmited form data in your id.
+
