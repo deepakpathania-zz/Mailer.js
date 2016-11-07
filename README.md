@@ -50,7 +50,7 @@ $(".submit-btn").click(function(e) {
         }
         else {
           $.post(
-              'https://your-herokuapp.com/', 
+              'https://your-app-name.herokuapp.com/', 
               {
                 username: $('#contact-name').val(),
                 email: $('#email').val(),
