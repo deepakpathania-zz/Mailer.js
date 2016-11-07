@@ -1,0 +1,23 @@
+{
+  "name": "Mailer.js",
+  "version": "1.0.0",
+  "description": "A JS script to receive mails at your email id of form submissions from any website.",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.7.1",
+    "express": "4.13.3",
+    "nodemailer": "^2.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "contact",
+    "form",
+    "mailer"
+  ],
+  "author": "Deepak Pathania",
+  "license": "MIT"
+}
